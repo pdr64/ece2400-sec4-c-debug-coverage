@@ -5,12 +5,12 @@ int gcd( int x, int y )
 {
   while ( y != 0 ) {
     if ( x < y ) {
-      int temp = x;
+      int temp = y;
       y = temp;
       x = y;
     }
     else {
-      x = x - y;
+      y = x - y;
     }
   }
   return x;
